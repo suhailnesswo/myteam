@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Free Demo Class</title>
+  <link rel="stylesheet" href="/main/assets/styyle.css">
+</head>
+<body>
+  <div class="container" >
+    <h1>Book a Free Demo Class</h1>
+    <p>Fill in the form below to schedule your free class.</p>
+
+    <form id="demoForm" action="https://formspree.io/f/xlekyqdb"
+		method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="course">Select Course:</label>
+      <select id="course" name="course" required>
+        <option value="webDevelopment">Web Development</option>
+        <option value="dataScience">Data Science</option>
+        <option value="appDevelopment">App Development</option>
+      </select>
+
+      <label for="feedback">Why are you interested in this course?</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Tell us what you're looking for..."></textarea>
+      <!-- <input type="submit" value="Book My Free Class" class="submit" required> -->
+      <button type="submit" class="submit" required  style="background-color: rgb(235, 195, 66);">Book My Free Class</button>
+    </form>
+  </div>
+</body>
+</html>
